@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "MorseMP3/1.0.0": {
+        "runtime": {
+          "MorseMP3.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MorseMP3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
