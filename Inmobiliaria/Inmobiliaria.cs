@@ -9,24 +9,24 @@ namespace Inmobiliaria
     {
         public enum TipoDeOperacion
         {
-            Venta,
-            Alquiler
+            Venta = 0,
+            Alquiler = 1
         }
 
         public enum TipoDePropiedad
         {
-            Departamento,
-            Casa,
-            Duplex,
-            Penthouse,
-            Terreno
+            Departamento = 0,
+            Casa = 1,
+            Duplex = 2,
+            Penthouse = 3,
+            Terreno = 4
         }
 
         public class Propiedad
         {
             int id;
-            string tipoProp;
-            string tipoOp;
+            TipoDePropiedad tipoProp;
+            TipoDeOperacion tipoOp;
             float tamanio;
             int cantBanios;
             int cantHabitaciones;
@@ -43,8 +43,8 @@ namespace Inmobiliaria
             public float Precio { get => precio; set => precio = value; }
             public bool Estado { get => estado; set => estado = value; }
             public float ValorDelInmueble { get => valorDelInmueble; set => valorDelInmueble = value; }
-            public string TipoProp { get => tipoProp; set => tipoProp = value; }
-            public string TipoOp { get => tipoOp; set => tipoOp = value; }
+            public TipoDePropiedad TipoProp { get => tipoProp; set => tipoProp = value; }
+            public TipoDeOperacion TipoOp { get => tipoOp; set => tipoOp = value; }
 
             public float CalcularValor()
             {
@@ -55,7 +55,7 @@ namespace Inmobiliaria
                 float ContratoAlq = Convert.ToSingle(precio * 0.005);
                 float ConstoTran = 10000;
 
-                if (tipoOp == "0")
+                if (tipoOp == Inmobiliaria.TipoDeOperacion.Venta)
                 {
                     valor = precio + IVAVen + IBrutoVen + ConstoTran;
                 }
@@ -81,6 +81,20 @@ namespace Inmobiliaria
 
 
             return leido;
+        }
+
+
+
+        public static void EscribirArchivo(List<Inmobiliaria.Propiedad> lista)
+        {
+            string ruta = @"C:\Repogit\tpn10-MartinezMatiasMaximiliano\Inmobiliaria\PropiedadesFinal.csv";
+            StreamWriter writer = new StreamWriter(File.Open(ruta ,FileMode.Create));
+            
+            foreach (Inmobiliaria.Propiedad item in lista)
+            {
+                writer.Write($"{item.Id};{item.TipoOp};{item.TipoProp};{item.Tamanio};{item.CantBanios};{item.CantHabitaciones};{item.Domicilio};{item.Precio};{item.ValorDelInmueble}\n");
+            }
+            writer.Close();
         }
     }
 }

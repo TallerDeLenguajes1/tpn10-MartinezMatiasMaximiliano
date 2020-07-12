@@ -20,10 +20,18 @@ namespace Inmobiliaria
                 string[] dire = item.Split(";");
                 Inmobiliaria.Propiedad nuevo = new Inmobiliaria.Propiedad();
                 nuevo.Id = ContProp;
-                nuevo.TipoProp = dire[1];
+                nuevo.TipoProp = (Inmobiliaria.TipoDePropiedad)Convert.ToInt32(dire[1]);
 
                 Random rand = new Random();
-                nuevo.TipoOp = Convert.ToString(rand.Next(0,1));
+
+                if (rand.Next(2) == 1)
+                {
+                    nuevo.TipoOp = Inmobiliaria.TipoDeOperacion.Venta;
+                }
+                else
+                {
+                    nuevo.TipoOp = Inmobiliaria.TipoDeOperacion.Alquiler;
+                }
 
                 nuevo.Tamanio = rand.Next(100,300);
 
@@ -41,6 +49,7 @@ namespace Inmobiliaria
 
             }
 
+            Inmobiliaria.EscribirArchivo(lista);
         }
     }
 }
