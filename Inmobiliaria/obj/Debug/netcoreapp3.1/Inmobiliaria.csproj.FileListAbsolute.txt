@@ -1,0 +1,13 @@
+C:\Repogit\tpn10-MartinezMatiasMaximiliano\Inmobiliaria\bin\Debug\netcoreapp3.1\Inmobiliaria.exe
+C:\Repogit\tpn10-MartinezMatiasMaximiliano\Inmobiliaria\bin\Debug\netcoreapp3.1\Inmobiliaria.deps.json
+C:\Repogit\tpn10-MartinezMatiasMaximiliano\Inmobiliaria\bin\Debug\netcoreapp3.1\Inmobiliaria.runtimeconfig.json
+C:\Repogit\tpn10-MartinezMatiasMaximiliano\Inmobiliaria\bin\Debug\netcoreapp3.1\Inmobiliaria.runtimeconfig.dev.json
+C:\Repogit\tpn10-MartinezMatiasMaximiliano\Inmobiliaria\bin\Debug\netcoreapp3.1\Inmobiliaria.dll
+C:\Repogit\tpn10-MartinezMatiasMaximiliano\Inmobiliaria\bin\Debug\netcoreapp3.1\Inmobiliaria.pdb
+C:\Repogit\tpn10-MartinezMatiasMaximiliano\Inmobiliaria\obj\Debug\netcoreapp3.1\Inmobiliaria.csprojAssemblyReference.cache
+C:\Repogit\tpn10-MartinezMatiasMaximiliano\Inmobiliaria\obj\Debug\netcoreapp3.1\Inmobiliaria.AssemblyInfoInputs.cache
+C:\Repogit\tpn10-MartinezMatiasMaximiliano\Inmobiliaria\obj\Debug\netcoreapp3.1\Inmobiliaria.AssemblyInfo.cs
+C:\Repogit\tpn10-MartinezMatiasMaximiliano\Inmobiliaria\obj\Debug\netcoreapp3.1\Inmobiliaria.csproj.CoreCompileInputs.cache
+C:\Repogit\tpn10-MartinezMatiasMaximiliano\Inmobiliaria\obj\Debug\netcoreapp3.1\Inmobiliaria.dll
+C:\Repogit\tpn10-MartinezMatiasMaximiliano\Inmobiliaria\obj\Debug\netcoreapp3.1\Inmobiliaria.pdb
+C:\Repogit\tpn10-MartinezMatiasMaximiliano\Inmobiliaria\obj\Debug\netcoreapp3.1\Inmobiliaria.genruntimeconfig.cache
